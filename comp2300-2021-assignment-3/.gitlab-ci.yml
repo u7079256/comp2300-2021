@@ -1,0 +1,31 @@
+image: comp2300/comp2300-ci:2021-v2
+
+build-check:
+  tags:
+    - comp2300
+  script:
+    - make
+
+statement-of-originality:
+  tags:
+    - comp2300
+  script:
+    - python3 /validate.py --schema https://cs.anu.edu.au/courses/comp2300/assets/schemas/statement-of-originality.json ./statement-of-originality.yml
+
+pins:
+  tags:
+    - comp2300
+  only:
+    refs:
+      - part-2
+  script:
+    - python3 /validate.py --schema https://cs.anu.edu.au/courses/comp2300/assets/schemas/pins.json ./pins.yml
+
+design-document:
+  tags:
+    - comp2300
+  only:
+    refs:
+      - part-2
+  script:
+    - python3 /validate.py --exists ./design-document.pdf

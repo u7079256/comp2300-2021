@@ -1,0 +1,20 @@
+my_pledge: >-
+
+  I am committed to being a person of integrity.
+
+  I pledge, as a member of the Australian National University community, to
+  abide by and uphold the standards of academic integrity outlined in the course
+  policy, the ANU statement on honesty and plagiarism, and I am aware of the
+  relevant legislation (see links below).
+
+  I commit & push this file to GitLab to indicate that I understand these rules
+  and the consequences of breaching them.
+
+links:
+  course_policy: "https://cs.anu.edu.au/courses/comp2300/policies/#academic-integrity"
+  course_faq: "https://cs.anu.edu.au/courses/comp2300/resources/faq/#academic-integrity"
+  anu_policy: "http://www.anu.edu.au/students/program-administration/assessments-exams/academic-honesty-plagiarism"
+  legislation: "https://www.legislation.gov.au/Details/F2015L02025"
+
+name: Xingjian Leng
+uid: u7136359

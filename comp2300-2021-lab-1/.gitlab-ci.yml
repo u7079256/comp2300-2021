@@ -1,0 +1,14 @@
+image: comp2300/comp2300-ci:2021-v2
+
+build-check:
+  tags:
+    - comp2300
+  script:
+    - echo $COMP2300
+    - make
+
+pledge-of-integrity:
+  tags:
+    - comp2300
+  script:
+    - python3 /validate.py --schema https://cs.anu.edu.au/courses/comp2300/assets/schemas/pledge-of-integrity.json ./pledge-of-integrity.yml

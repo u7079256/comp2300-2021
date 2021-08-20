@@ -1,0 +1,7 @@
+image: comp2300/comp2300-ci:2021-v2
+
+build-check:
+  tags:
+    - comp2300
+  script:
+    - make
